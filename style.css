@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+    color: white;
+    height: 60px;
+    background-color: rgb(23, 17, 62);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.scoreboard > div {
+    margin: 0 10px;
+}
+
+.scoreboard .player,
+.scoreboard .computer {
+    font-weight: bold;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.img-button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.img-button:hover {
+    transform: scale(1.1);
+}
+
+.img-button:active {
+    transform: scale(1.05);
+}
+
+.img {
+    width: 120px; /* Adjusted size */
+    height: auto;
+}
+.result {
+    color: green;
+    font-weight: bold;
+    font-size: 24px;
+}
